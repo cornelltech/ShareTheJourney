@@ -397,7 +397,10 @@ typedef NS_ENUM(NSUInteger, APHDynamicMoodSurveyType) {
         completedNumberOfTimes = YES;
         
         ORKStepResult *stepResult = [result stepResultForStepIdentifier:kCustomMoodSurveyStep102];
-        NSString *skipQuestion = [stepResult.results.firstObject textAnswer];
+        NSString *skipQuestion = nil;
+        
+        if([stepResult.results.firstObject isKindOfClass:[ORKTextQuestionResult class]])
+            skipQuestion = [(ORKTextQuestionResult *)stepResult.results.firstObject textAnswer];
         
         if (skipQuestion != nil) {
             if ([step.identifier isEqualToString:kMoodSurveyStep108])

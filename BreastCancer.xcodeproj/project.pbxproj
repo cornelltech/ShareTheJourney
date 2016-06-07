@@ -18,6 +18,8 @@
 		087B44C61B1B9C6000568999 /* BCSWeeklySurvey.json in Resources */ = {isa = PBXBuildFile; fileRef = 087B44C11B1B9C6000568999 /* BCSWeeklySurvey.json */; };
 		215C53671A8C5D6F0006F7DC /* APHNotesHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 215C53651A8C5D6F0006F7DC /* APHNotesHeaderTableViewCell.m */; };
 		215C53681A8C5D6F0006F7DC /* APHNotesHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 215C53661A8C5D6F0006F7DC /* APHNotesHeaderTableViewCell.xib */; };
+		484244541D07240500CBB95E /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 747FB1301ABDDCAA00345000 /* ResearchKit.framework */; };
+		484244551D07240500CBB95E /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 747FB1301ABDDCAA00345000 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5A0F98DA1AA2E2A900A2A7EB /* Intro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5A0F98D91AA2E2A900A2A7EB /* Intro.mp4 */; };
 		5B1095C01A9FA0B5006631F5 /* consent.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5B1095BF1A9FA0B5006631F5 /* consent.pdf */; };
 		5B15DCF41A114F7000BEA0D1 /* Learn.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B15DCF21A114F7000BEA0D1 /* Learn.json */; };
@@ -32,10 +34,8 @@
 		5BBDAEBB1A33DCDA0047DF87 /* HTMLContent in Resources */ = {isa = PBXBuildFile; fileRef = 5BBDAEBA1A33DCDA0047DF87 /* HTMLContent */; };
 		6C8645171AF3F73B00B46C49 /* APHAppDelegate+APHMigration.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C8645161AF3F73B00B46C49 /* APHAppDelegate+APHMigration.m */; };
 		744174E61A923861004A7CC1 /* APHConsentSection.json in Resources */ = {isa = PBXBuildFile; fileRef = 744174E51A923861004A7CC1 /* APHConsentSection.json */; };
-		747FB13E1ABDDD1E00345000 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 747FB1301ABDDCAA00345000 /* ResearchKit.framework */; };
 		747FB13F1ABDDD2500345000 /* APCAppCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 747FB13B1ABDDCBA00345000 /* APCAppCore.framework */; };
 		747FB15B1ABDF02100345000 /* APCAppCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 747FB13B1ABDDCBA00345000 /* APCAppCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		74EF8E0C1ABEFE7B001B47E1 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 747FB1301ABDDCAA00345000 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74EF8E0F1ABEFE86001B47E1 /* BridgeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74EF8E051ABEFE62001B47E1 /* BridgeSDK.framework */; };
 		74EF8E101ABEFE86001B47E1 /* BridgeSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 74EF8E051ABEFE62001B47E1 /* BridgeSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7B0541F71A842B4900B7729D /* APHDynamicMoodSurveyTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B0541F61A842B4900B7729D /* APHDynamicMoodSurveyTask.m */; };
@@ -102,6 +102,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		484244561D07240500CBB95E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 747FB1281ABDDCAA00345000 /* ResearchKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = B183A4731A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
 		6C8645201AF3F73B00B46C49 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 747FB1281ABDDCAA00345000 /* ResearchKit.xcodeproj */;
@@ -136,13 +143,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = F5179B2819D09128001DCCB7;
 			remoteInfo = APCAppCore;
-		};
-		747FB1421ABDDE3000345000 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 747FB1281ABDDCAA00345000 /* ResearchKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = B183A4731A8535D100C76870;
-			remoteInfo = OpenResearchKit;
 		};
 		747FB15C1ABDF02100345000 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -189,8 +189,8 @@
 			dstSubfolderSpec = 10;
 			files = (
 				747FB15B1ABDF02100345000 /* APCAppCore.framework in Embed Frameworks */,
-				74EF8E0C1ABEFE7B001B47E1 /* ResearchKit.framework in Embed Frameworks */,
 				74EF8E101ABEFE86001B47E1 /* BridgeSDK.framework in Embed Frameworks */,
+				484244551D07240500CBB95E /* ResearchKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,11 +332,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				747FB13F1ABDDD2500345000 /* APCAppCore.framework in Frameworks */,
-				747FB13E1ABDDD1E00345000 /* ResearchKit.framework in Frameworks */,
 				F534B70F19E469A600C3C152 /* AVFoundation.framework in Frameworks */,
 				F534B70D19E469A100C3C152 /* Security.framework in Frameworks */,
 				F534B70B19E4699A00C3C152 /* CoreData.framework in Frameworks */,
 				74EF8E0F1ABEFE86001B47E1 /* BridgeSDK.framework in Frameworks */,
+				484244541D07240500CBB95E /* ResearchKit.framework in Frameworks */,
 				F534B6F619E468D400C3C152 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -793,10 +793,10 @@
 			);
 			dependencies = (
 				74EF8E1A1ABEFEBB001B47E1 /* PBXTargetDependency */,
-				747FB1431ABDDE3000345000 /* PBXTargetDependency */,
 				747FB1411ABDDE2B00345000 /* PBXTargetDependency */,
 				747FB15D1ABDF02100345000 /* PBXTargetDependency */,
 				74EF8E0E1ABEFE7B001B47E1 /* PBXTargetDependency */,
+				484244571D07240500CBB95E /* PBXTargetDependency */,
 			);
 			name = BreastCancer;
 			productName = BreastCancer;
@@ -815,6 +815,7 @@
 				TargetAttributes = {
 					F534B58219E4681E00C3C152 = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = AA753846B2;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -1009,15 +1010,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		484244571D07240500CBB95E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ResearchKit;
+			targetProxy = 484244561D07240500CBB95E /* PBXContainerItemProxy */;
+		};
 		747FB1411ABDDE2B00345000 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = APCAppCore;
 			targetProxy = 747FB1401ABDDE2B00345000 /* PBXContainerItemProxy */;
-		};
-		747FB1431ABDDE3000345000 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = OpenResearchKit;
-			targetProxy = 747FB1421ABDDE3000345000 /* PBXContainerItemProxy */;
 		};
 		747FB15D1ABDF02100345000 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1130,12 +1131,14 @@
 				CODE_SIGN_ENTITLEMENTS = BreastCancer/BreastCancer.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AppCore/APCAppCore/**",
 				);
 				INFOPLIST_FILE = BreastCancer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cornell.tech.foundry.jdkizer.ShareTheJourney;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -1150,12 +1153,14 @@
 				CODE_SIGN_ENTITLEMENTS = BreastCancer/BreastCancer.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AppCore/APCAppCore/**",
 				);
 				INFOPLIST_FILE = BreastCancer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cornell.tech.foundry.jdkizer.ShareTheJourney;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -1215,6 +1220,7 @@
 				CODE_SIGN_ENTITLEMENTS = BreastCancer/BreastCancer.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AppCore/APCAppCore/**",
@@ -1225,6 +1231,7 @@
 				);
 				INFOPLIST_FILE = BreastCancer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cornell.tech.foundry.jdkizer.ShareTheJourney;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

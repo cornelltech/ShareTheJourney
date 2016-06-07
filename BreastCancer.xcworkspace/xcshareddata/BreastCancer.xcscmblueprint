@@ -1,0 +1,44 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "0E6DB6318139B6AA78A0CA31EBCB17977AF07F36",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "0E6DB6318139B6AA78A0CA31EBCB17977AF07F36" : 0,
+    "2AB82FAEF182B606BE5DBA6728A3A6DFA63EED7D" : 0,
+    "CEE2E2DA3B415DB70C257504A5BA6B611A730B63" : 0,
+    "9CF6181E3789E3853840089C16D4B9FDDB9B31E2" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3FCA9315-A0AE-43BD-9017-5902F3798BDF",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "0E6DB6318139B6AA78A0CA31EBCB17977AF07F36" : "ShareTheJourney\/",
+    "2AB82FAEF182B606BE5DBA6728A3A6DFA63EED7D" : "ShareTheJourney\/AppCore\/",
+    "CEE2E2DA3B415DB70C257504A5BA6B611A730B63" : "ShareTheJourney\/BridgeSDK\/",
+    "9CF6181E3789E3853840089C16D4B9FDDB9B31E2" : "ShareTheJourney\/ResearchKit\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BreastCancer",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BreastCancer.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/cornelltech\/ShareTheJourney.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "0E6DB6318139B6AA78A0CA31EBCB17977AF07F36"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ResearchKit\/AppCore.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2AB82FAEF182B606BE5DBA6728A3A6DFA63EED7D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ResearchKit\/ResearchKit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9CF6181E3789E3853840089C16D4B9FDDB9B31E2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Sage-Bionetworks\/Bridge-iOS-SDK.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CEE2E2DA3B415DB70C257504A5BA6B611A730B63"
+    }
+  ]
+}

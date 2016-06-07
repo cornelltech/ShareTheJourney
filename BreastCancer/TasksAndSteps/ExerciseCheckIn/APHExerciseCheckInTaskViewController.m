@@ -66,11 +66,9 @@ static NSString* const kExerciseSurveyStep106           = @"exercisesurvey106";
 
 @implementation APHExerciseCheckInTaskViewController
 
-+ (id<ORKTask>)createTask:(APCScheduledTask *) __unused scheduledTask
++ (id<ORKTask>)createTask:(APCScheduledTask *) scheduledTask
 {
-    APHExerciseCheckinTask* task = [[APHExerciseCheckinTask alloc] init];
-    
-    return task;
+    return  [scheduledTask.task rkTask];
 }
 
 /*********************************************************************************/

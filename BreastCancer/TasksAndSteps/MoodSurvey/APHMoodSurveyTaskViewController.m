@@ -111,11 +111,9 @@ static NSInteger const kNumberOfCompletionsUntilDisplayingCustomSurvey = 7;
 #pragma mark - Initialize
 /*********************************************************************************/
 
-+ (id<ORKTask>)createTask:(APCScheduledTask *) __unused scheduledTask
++ (id<ORKTask>)createTask:(APCScheduledTask *) scheduledTask
 {
-    APHDynamicMoodSurveyTask *task = [[APHDynamicMoodSurveyTask alloc] init];
-    
-    return task;
+    return  [scheduledTask.task rkTask];
 }
 
 /*********************************************************************************/
