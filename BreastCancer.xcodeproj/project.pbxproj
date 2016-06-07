@@ -20,6 +20,8 @@
 		215C53681A8C5D6F0006F7DC /* APHNotesHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 215C53661A8C5D6F0006F7DC /* APHNotesHeaderTableViewCell.xib */; };
 		484244541D07240500CBB95E /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 747FB1301ABDDCAA00345000 /* ResearchKit.framework */; };
 		484244551D07240500CBB95E /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 747FB1301ABDDCAA00345000 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		486AACBC1D07327300EE4C7C /* APCAppCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 747FB13B1ABDDCBA00345000 /* APCAppCore.framework */; };
+		486AACBD1D07327300EE4C7C /* APCAppCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 747FB13B1ABDDCBA00345000 /* APCAppCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5A0F98DA1AA2E2A900A2A7EB /* Intro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5A0F98D91AA2E2A900A2A7EB /* Intro.mp4 */; };
 		5B1095C01A9FA0B5006631F5 /* consent.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5B1095BF1A9FA0B5006631F5 /* consent.pdf */; };
 		5B15DCF41A114F7000BEA0D1 /* Learn.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B15DCF21A114F7000BEA0D1 /* Learn.json */; };
@@ -34,8 +36,6 @@
 		5BBDAEBB1A33DCDA0047DF87 /* HTMLContent in Resources */ = {isa = PBXBuildFile; fileRef = 5BBDAEBA1A33DCDA0047DF87 /* HTMLContent */; };
 		6C8645171AF3F73B00B46C49 /* APHAppDelegate+APHMigration.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C8645161AF3F73B00B46C49 /* APHAppDelegate+APHMigration.m */; };
 		744174E61A923861004A7CC1 /* APHConsentSection.json in Resources */ = {isa = PBXBuildFile; fileRef = 744174E51A923861004A7CC1 /* APHConsentSection.json */; };
-		747FB13F1ABDDD2500345000 /* APCAppCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 747FB13B1ABDDCBA00345000 /* APCAppCore.framework */; };
-		747FB15B1ABDF02100345000 /* APCAppCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 747FB13B1ABDDCBA00345000 /* APCAppCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74EF8E0F1ABEFE86001B47E1 /* BridgeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74EF8E051ABEFE62001B47E1 /* BridgeSDK.framework */; };
 		74EF8E101ABEFE86001B47E1 /* BridgeSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 74EF8E051ABEFE62001B47E1 /* BridgeSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7B0541F71A842B4900B7729D /* APHDynamicMoodSurveyTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B0541F61A842B4900B7729D /* APHDynamicMoodSurveyTask.m */; };
@@ -109,6 +109,13 @@
 			remoteGlobalIDString = B183A4731A8535D100C76870;
 			remoteInfo = ResearchKit;
 		};
+		486AACBE1D07327300EE4C7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 747FB1351ABDDCBA00345000 /* APCAppCore.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F5179B2819D09128001DCCB7;
+			remoteInfo = APCAppCore;
+		};
 		6C8645201AF3F73B00B46C49 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 747FB1281ABDDCAA00345000 /* ResearchKit.xcodeproj */;
@@ -136,13 +143,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = F5179B3419D09128001DCCB7;
 			remoteInfo = APCAppCoreTests;
-		};
-		747FB1401ABDDE2B00345000 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 747FB1351ABDDCBA00345000 /* APCAppCore.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = F5179B2819D09128001DCCB7;
-			remoteInfo = APCAppCore;
 		};
 		747FB15C1ABDF02100345000 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -188,9 +188,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				747FB15B1ABDF02100345000 /* APCAppCore.framework in Embed Frameworks */,
 				74EF8E101ABEFE86001B47E1 /* BridgeSDK.framework in Embed Frameworks */,
 				484244551D07240500CBB95E /* ResearchKit.framework in Embed Frameworks */,
+				486AACBD1D07327300EE4C7C /* APCAppCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,7 +331,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				747FB13F1ABDDD2500345000 /* APCAppCore.framework in Frameworks */,
+				486AACBC1D07327300EE4C7C /* APCAppCore.framework in Frameworks */,
 				F534B70F19E469A600C3C152 /* AVFoundation.framework in Frameworks */,
 				F534B70D19E469A100C3C152 /* Security.framework in Frameworks */,
 				F534B70B19E4699A00C3C152 /* CoreData.framework in Frameworks */,
@@ -793,10 +793,10 @@
 			);
 			dependencies = (
 				74EF8E1A1ABEFEBB001B47E1 /* PBXTargetDependency */,
-				747FB1411ABDDE2B00345000 /* PBXTargetDependency */,
 				747FB15D1ABDF02100345000 /* PBXTargetDependency */,
 				74EF8E0E1ABEFE7B001B47E1 /* PBXTargetDependency */,
 				484244571D07240500CBB95E /* PBXTargetDependency */,
+				486AACBF1D07327300EE4C7C /* PBXTargetDependency */,
 			);
 			name = BreastCancer;
 			productName = BreastCancer;
@@ -1015,10 +1015,10 @@
 			name = ResearchKit;
 			targetProxy = 484244561D07240500CBB95E /* PBXContainerItemProxy */;
 		};
-		747FB1411ABDDE2B00345000 /* PBXTargetDependency */ = {
+		486AACBF1D07327300EE4C7C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = APCAppCore;
-			targetProxy = 747FB1401ABDDE2B00345000 /* PBXContainerItemProxy */;
+			targetProxy = 486AACBE1D07327300EE4C7C /* PBXContainerItemProxy */;
 		};
 		747FB15D1ABDF02100345000 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
