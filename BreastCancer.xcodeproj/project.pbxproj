@@ -22,6 +22,15 @@
 		484244551D07240500CBB95E /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 747FB1301ABDDCAA00345000 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		486AACBC1D07327300EE4C7C /* APCAppCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 747FB13B1ABDDCBA00345000 /* APCAppCore.framework */; };
 		486AACBD1D07327300EE4C7C /* APCAppCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 747FB13B1ABDDCBA00345000 /* APCAppCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		486AAD2B1D07426C00EE4C7C /* SDLRKX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 486AACDA1D07415800EE4C7C /* SDLRKX.framework */; };
+		486AAD2C1D07426C00EE4C7C /* SDLRKX.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 486AACDA1D07415800EE4C7C /* SDLRKX.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		486AAD321D074FD000EE4C7C /* APHPamTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 486AAD311D074FD000EE4C7C /* APHPamTaskViewController.m */; };
+		486AAD351D07694100EE4C7C /* APHYADLFullAssessmentTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 486AAD341D07694100EE4C7C /* APHYADLFullAssessmentTaskViewController.m */; };
+		486AAD381D076B5A00EE4C7C /* MEDL.json in Resources */ = {isa = PBXBuildFile; fileRef = 486AAD361D076B5A00EE4C7C /* MEDL.json */; };
+		486AAD391D076B5A00EE4C7C /* YADL.json in Resources */ = {isa = PBXBuildFile; fileRef = 486AAD371D076B5A00EE4C7C /* YADL.json */; };
+		486AAD3B1D076B8A00EE4C7C /* MEDL.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 486AAD3A1D076B8A00EE4C7C /* MEDL.xcassets */; };
+		486AAD3D1D076B9100EE4C7C /* YADL.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 486AAD3C1D076B9100EE4C7C /* YADL.xcassets */; };
+		486AAD401D076C0C00EE4C7C /* APHYADLSpotAssessmentTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 486AAD3F1D076C0C00EE4C7C /* APHYADLSpotAssessmentTaskViewController.m */; };
 		5A0F98DA1AA2E2A900A2A7EB /* Intro.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5A0F98D91AA2E2A900A2A7EB /* Intro.mp4 */; };
 		5B1095C01A9FA0B5006631F5 /* consent.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 5B1095BF1A9FA0B5006631F5 /* consent.pdf */; };
 		5B15DCF41A114F7000BEA0D1 /* Learn.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B15DCF21A114F7000BEA0D1 /* Learn.json */; };
@@ -116,6 +125,20 @@
 			remoteGlobalIDString = F5179B2819D09128001DCCB7;
 			remoteInfo = APCAppCore;
 		};
+		486AACD91D07415800EE4C7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 486AACD51D07415100EE4C7C /* SDLRKX.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 486AACCA1D07414D00EE4C7C;
+			remoteInfo = SDLRKX;
+		};
+		486AAD2D1D07426C00EE4C7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 486AACD51D07415100EE4C7C /* SDLRKX.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 486AACC91D07414D00EE4C7C;
+			remoteInfo = SDLRKX;
+		};
 		6C8645201AF3F73B00B46C49 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 747FB1281ABDDCAA00345000 /* ResearchKit.xcodeproj */;
@@ -188,6 +211,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				486AAD2C1D07426C00EE4C7C /* SDLRKX.framework in Embed Frameworks */,
 				74EF8E101ABEFE86001B47E1 /* BridgeSDK.framework in Embed Frameworks */,
 				484244551D07240500CBB95E /* ResearchKit.framework in Embed Frameworks */,
 				486AACBD1D07327300EE4C7C /* APCAppCore.framework in Embed Frameworks */,
@@ -215,6 +239,17 @@
 		215C53641A8C5D6F0006F7DC /* APHNotesHeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APHNotesHeaderTableViewCell.h; path = DailyJournalControllers/APHNotesHeaderTableViewCell.h; sourceTree = "<group>"; };
 		215C53651A8C5D6F0006F7DC /* APHNotesHeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APHNotesHeaderTableViewCell.m; path = DailyJournalControllers/APHNotesHeaderTableViewCell.m; sourceTree = "<group>"; };
 		215C53661A8C5D6F0006F7DC /* APHNotesHeaderTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = APHNotesHeaderTableViewCell.xib; path = DailyJournalControllers/APHNotesHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		486AACD51D07415100EE4C7C /* SDLRKX.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SDLRKX.xcodeproj; path = "sdl-rkx/SDLRKX/SDLRKX.xcodeproj"; sourceTree = "<group>"; };
+		486AAD301D074FD000EE4C7C /* APHPamTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APHPamTaskViewController.h; sourceTree = "<group>"; };
+		486AAD311D074FD000EE4C7C /* APHPamTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APHPamTaskViewController.m; sourceTree = "<group>"; };
+		486AAD331D07694100EE4C7C /* APHYADLFullAssessmentTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APHYADLFullAssessmentTaskViewController.h; sourceTree = "<group>"; };
+		486AAD341D07694100EE4C7C /* APHYADLFullAssessmentTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APHYADLFullAssessmentTaskViewController.m; sourceTree = "<group>"; };
+		486AAD361D076B5A00EE4C7C /* MEDL.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = MEDL.json; path = BreastCancer/Resources/SDLRKXAddOns/MEDL.json; sourceTree = SOURCE_ROOT; };
+		486AAD371D076B5A00EE4C7C /* YADL.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = YADL.json; path = BreastCancer/Resources/SDLRKXAddOns/YADL.json; sourceTree = SOURCE_ROOT; };
+		486AAD3A1D076B8A00EE4C7C /* MEDL.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = MEDL.xcassets; path = Resources/SDLRKXAddOns/MEDL.xcassets; sourceTree = "<group>"; };
+		486AAD3C1D076B9100EE4C7C /* YADL.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = YADL.xcassets; path = Resources/SDLRKXAddOns/YADL.xcassets; sourceTree = "<group>"; };
+		486AAD3E1D076C0C00EE4C7C /* APHYADLSpotAssessmentTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APHYADLSpotAssessmentTaskViewController.h; sourceTree = "<group>"; };
+		486AAD3F1D076C0C00EE4C7C /* APHYADLSpotAssessmentTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APHYADLSpotAssessmentTaskViewController.m; sourceTree = "<group>"; };
 		5A0F98D91AA2E2A900A2A7EB /* Intro.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Intro.mp4; sourceTree = "<group>"; };
 		5B1095BF1A9FA0B5006631F5 /* consent.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = consent.pdf; sourceTree = "<group>"; };
 		5B15DCF21A114F7000BEA0D1 /* Learn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Learn.json; sourceTree = "<group>"; };
@@ -335,6 +370,7 @@
 				F534B70F19E469A600C3C152 /* AVFoundation.framework in Frameworks */,
 				F534B70D19E469A100C3C152 /* Security.framework in Frameworks */,
 				F534B70B19E4699A00C3C152 /* CoreData.framework in Frameworks */,
+				486AAD2B1D07426C00EE4C7C /* SDLRKX.framework in Frameworks */,
 				74EF8E0F1ABEFE86001B47E1 /* BridgeSDK.framework in Frameworks */,
 				484244541D07240500CBB95E /* ResearchKit.framework in Frameworks */,
 				F534B6F619E468D400C3C152 /* HealthKit.framework in Frameworks */,
@@ -373,10 +409,33 @@
 			children = (
 				087B44BD1B1B9C6000568999 /* BCS_feedback.json */,
 				087B44BE1B1B9C6000568999 /* BCS_mythoughts.json */,
+				486AAD361D076B5A00EE4C7C /* MEDL.json */,
+				486AAD371D076B5A00EE4C7C /* YADL.json */,
 				087B44BF1B1B9C6000568999 /* BCSBackgroundSurvey.json */,
 				087B44C11B1B9C6000568999 /* BCSWeeklySurvey.json */,
 			);
 			path = Surveys;
+			sourceTree = "<group>";
+		};
+		486AACD61D07415100EE4C7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				486AACDA1D07415800EE4C7C /* SDLRKX.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		486AAD2F1D074DD200EE4C7C /* SDLRKXAddOns */ = {
+			isa = PBXGroup;
+			children = (
+				486AAD301D074FD000EE4C7C /* APHPamTaskViewController.h */,
+				486AAD311D074FD000EE4C7C /* APHPamTaskViewController.m */,
+				486AAD331D07694100EE4C7C /* APHYADLFullAssessmentTaskViewController.h */,
+				486AAD341D07694100EE4C7C /* APHYADLFullAssessmentTaskViewController.m */,
+				486AAD3E1D076C0C00EE4C7C /* APHYADLSpotAssessmentTaskViewController.h */,
+				486AAD3F1D076C0C00EE4C7C /* APHYADLSpotAssessmentTaskViewController.m */,
+			);
+			name = SDLRKXAddOns;
 			sourceTree = "<group>";
 		};
 		5B1095BE1A9FA0B5006631F5 /* PDF */ = {
@@ -659,6 +718,8 @@
 				F534B5C419E4689D00C3C152 /* Resources */,
 				F53F27991A2D30D600A1D725 /* Library */,
 				F534B59319E4681E00C3C152 /* Images.xcassets */,
+				486AAD3C1D076B9100EE4C7C /* YADL.xcassets */,
+				486AAD3A1D076B8A00EE4C7C /* MEDL.xcassets */,
 				F534B58619E4681E00C3C152 /* Supporting Files */,
 			);
 			path = BreastCancer;
@@ -735,6 +796,7 @@
 		F534B60C19E4689D00C3C152 /* TasksAndSteps */ = {
 			isa = PBXGroup;
 			children = (
+				486AAD2F1D074DD200EE4C7C /* SDLRKXAddOns */,
 				087B44A71B1B981100568999 /* ExerciseCheckIn */,
 				7B7953031A22849300AA8039 /* ExerciseSurvey */,
 				7B5E25C71A20454200A04FEF /* Mood Survey */,
@@ -766,6 +828,7 @@
 		F571C9261A2F97450011C270 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				486AACD51D07415100EE4C7C /* SDLRKX.xcodeproj */,
 				74EF8DF91ABEFE61001B47E1 /* BridgeSDK.xcodeproj */,
 				747FB1281ABDDCAA00345000 /* ResearchKit.xcodeproj */,
 				747FB1351ABDDCBA00345000 /* APCAppCore.xcodeproj */,
@@ -797,6 +860,7 @@
 				74EF8E0E1ABEFE7B001B47E1 /* PBXTargetDependency */,
 				484244571D07240500CBB95E /* PBXTargetDependency */,
 				486AACBF1D07327300EE4C7C /* PBXTargetDependency */,
+				486AAD2E1D07426C00EE4C7C /* PBXTargetDependency */,
 			);
 			name = BreastCancer;
 			productName = BreastCancer;
@@ -854,6 +918,10 @@
 					ProductGroup = 747FB1291ABDDCAA00345000 /* Products */;
 					ProjectRef = 747FB1281ABDDCAA00345000 /* ResearchKit.xcodeproj */;
 				},
+				{
+					ProductGroup = 486AACD61D07415100EE4C7C /* Products */;
+					ProjectRef = 486AACD51D07415100EE4C7C /* SDLRKX.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -863,6 +931,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		486AACDA1D07415800EE4C7C /* SDLRKX.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SDLRKX.framework;
+			remoteRef = 486AACD91D07415800EE4C7C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		6C8645211AF3F73B00B46C49 /* ResearchKitTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
@@ -913,6 +988,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7BA3AC111A23DDBC0017B3C8 /* APHExerciseMotivationIntroViewController.xib in Resources */,
+				486AAD3B1D076B8A00EE4C7C /* MEDL.xcassets in Resources */,
 				087B44C61B1B9C6000568999 /* BCSWeeklySurvey.json in Resources */,
 				A7D61A5E1A97B2D700637EDA /* 13_RiskToPrivacy@2x.m4v in Resources */,
 				5B15DCF51A114F7000BEA0D1 /* WithdrawStudy.json in Resources */,
@@ -941,12 +1017,15 @@
 				F534B68B19E4689D00C3C152 /* APHTasksAndSchedules.json in Resources */,
 				F534B69D19E4689D00C3C152 /* Main.storyboard in Resources */,
 				A7D61A5A1A97B2D700637EDA /* 02_SensorData_to_DataGathering@2x.m4v in Resources */,
+				486AAD391D076B5A00EE4C7C /* YADL.json in Resources */,
 				5B18CEDA1A2CFFD1001A905E /* TermsAndConditions.json in Resources */,
+				486AAD3D1D076B9100EE4C7C /* YADL.xcassets in Resources */,
 				744174E61A923861004A7CC1 /* APHConsentSection.json in Resources */,
 				CF5FAB4419F95C8F0006CA71 /* APHNotesContentsTableViewCell.xib in Resources */,
 				5B15DCF41A114F7000BEA0D1 /* Learn.json in Resources */,
 				7BB24C371A831EC900AAE097 /* APHCustomSurveyQuestionViewController.xib in Resources */,
 				7B5A5AB61A83FCF700628D4D /* APHCustomSurveyIntroViewController.xib in Resources */,
+				486AAD381D076B5A00EE4C7C /* MEDL.json in Resources */,
 				A7D61A611A97B2D700637EDA /* 02_SensorData_to_DataGathering@3x.m4v in Resources */,
 				A7D61A651A97B2D700637EDA /* 13_RiskToPrivacy@3x.m4v in Resources */,
 				CF15F2501A116A5A00D87570 /* APHDailyJournalIntroViewController.xib in Resources */,
@@ -982,11 +1061,13 @@
 				087B44AF1B1B982300568999 /* APHExerciseCheckinTask.m in Sources */,
 				7B4B18311A8D720400F79C94 /* APHProfileExtender.m in Sources */,
 				CF2697E619EC3E4200525E19 /* APHContentsViewController.m in Sources */,
+				486AAD351D07694100EE4C7C /* APHYADLFullAssessmentTaskViewController.m in Sources */,
 				083D6AFA1AA4AE130064AADD /* APHBackgroundSurveyViewController.m in Sources */,
 				087B44AA1B1B981100568999 /* APHExerciseCheckInTaskViewController.m in Sources */,
 				CF15F24F1A116A5A00D87570 /* APHDailyJournalIntroViewController.m in Sources */,
 				F534B58919E4681E00C3C152 /* main.m in Sources */,
 				CF15F24B1A11616500D87570 /* APHDailyJournalTaskViewController.m in Sources */,
+				486AAD321D074FD000EE4C7C /* APHPamTaskViewController.m in Sources */,
 				7BFD56791A24FAF0001210A2 /* APHDisplayLogHistoryViewController.m in Sources */,
 				6C8645171AF3F73B00B46C49 /* APHAppDelegate+APHMigration.m in Sources */,
 				7B5E25D01A20592400A04FEF /* APHHeartAgeIntroStepViewController.m in Sources */,
@@ -1004,6 +1085,7 @@
 				7BA3AC101A23DDBC0017B3C8 /* APHExerciseMotivationIntroViewController.m in Sources */,
 				7B79530E1A22884500AA8039 /* APHExerciseSurveyTaskViewController.m in Sources */,
 				5B1D9D6D1A1BD414000F4AD6 /* APHDashboardEditViewController.m in Sources */,
+				486AAD401D076C0C00EE4C7C /* APHYADLSpotAssessmentTaskViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1019,6 +1101,11 @@
 			isa = PBXTargetDependency;
 			name = APCAppCore;
 			targetProxy = 486AACBE1D07327300EE4C7C /* PBXContainerItemProxy */;
+		};
+		486AAD2E1D07426C00EE4C7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SDLRKX;
+			targetProxy = 486AAD2D1D07426C00EE4C7C /* PBXContainerItemProxy */;
 		};
 		747FB15D1ABDF02100345000 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

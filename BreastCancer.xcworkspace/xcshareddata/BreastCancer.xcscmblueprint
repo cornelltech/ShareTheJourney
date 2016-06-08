@@ -4,6 +4,7 @@
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "6981085B1637C0C4B7CD7C504482C3BB78E0396F" : 0,
     "0E6DB6318139B6AA78A0CA31EBCB17977AF07F36" : 0,
     "2AB82FAEF182B606BE5DBA6728A3A6DFA63EED7D" : 0,
     "CEE2E2DA3B415DB70C257504A5BA6B611A730B63" : 0,
@@ -11,6 +12,7 @@
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3FCA9315-A0AE-43BD-9017-5902F3798BDF",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "6981085B1637C0C4B7CD7C504482C3BB78E0396F" : "ShareTheJourney\/sdl-rkx\/",
     "0E6DB6318139B6AA78A0CA31EBCB17977AF07F36" : "ShareTheJourney\/",
     "2AB82FAEF182B606BE5DBA6728A3A6DFA63EED7D" : "ShareTheJourney\/AppCore\/",
     "CEE2E2DA3B415DB70C257504A5BA6B611A730B63" : "ShareTheJourney\/BridgeSDK\/",
@@ -29,6 +31,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ResearchKit\/AppCore.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2AB82FAEF182B606BE5DBA6728A3A6DFA63EED7D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/cornelltech\/sdl-rkx.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6981085B1637C0C4B7CD7C504482C3BB78E0396F"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ResearchKit\/ResearchKit.git",

@@ -34,6 +34,7 @@
 @import APCAppCore;
 #import "APHAppDelegate.h"
 #import "APHProfileExtender.h"
+@import SDLRKX;
 
 
 #pragma mark - Survey Identifiers
@@ -94,6 +95,13 @@ typedef NS_ENUM(NSUInteger, APHMigrationRecurringKinds) {
     [super application:application willFinishLaunchingWithOptions:launchOptions];
     
     [self enableBackgroundDeliveryForHealthKitTypes];
+    
+    PAMTask *pamTask = [[PAMTask alloc] initWithIdentifier:@"ID"];
+    Class viewControllerClass = NSClassFromString (@"SDLRKX.PAMTask");
+    if (viewControllerClass != nil) {
+        NSLog(@"%@", viewControllerClass);
+    }
+    
     
     return YES;
 }

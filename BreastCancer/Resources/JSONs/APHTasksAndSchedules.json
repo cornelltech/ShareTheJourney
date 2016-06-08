@@ -85,6 +85,35 @@
                                        "taskClassName" : "APCGenericSurveyTaskViewController",
                                        "taskCompletionTimeString" : "28 Questions"
                                        }]
+                  },
+                  {
+                  "scheduleType": "once",
+                  "tasks": [{
+                            "taskTitle" : "PAM",
+                            "taskID": "PAM-1E174065-5B02-11E4-8ED6-0800200C9A60",
+                            "taskClassName" : "APHPamTaskViewController",
+                            "taskCompletionTimeString" : "1 Question"
+                            }]
+                  },
+                  {
+                  "scheduleType": "once",
+                  "tasks": [{
+                            "taskTitle" : "YADLFullAssessment",
+                            "taskID": "YADL-Full-Assessment-1E174065-5B02-11E4-8ED6-0800200C9A6A",
+                            "taskClassName" : "APHYADLFullAssessmentTaskViewController",
+                            "taskFileName" : "YADL",
+                            "taskCompletionTimeString" : "1 Question"
+                            }]
+                  },
+                  {
+                  "scheduleType": "once",
+                  "tasks": [{
+                            "taskTitle" : "YADLSpotAssessment",
+                            "taskID": "YADL-Spot-Assessment-1E174065-5B02-11E4-8ED6-0800200C9A6A",
+                            "taskClassName" : "APHYADLSpotAssessmentTaskViewController",
+                            "taskFileName" : "YADL",
+                            "taskCompletionTimeString" : "1 Question"
+                            }]
                   }
                   ]
 }
